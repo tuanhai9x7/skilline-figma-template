@@ -178,10 +178,16 @@ img {
   @include maxWidth(1279px) {
     @include size(6rem);
     font-size: 1.8rem;
+    &:hover {
+      font-size: 2rem;
+    }
   }
   @include maxWidth(1023px) {
     @include size(4rem);
     font-size: 1.2rem;
+    &:hover {
+      font-size: 1.6rem;
+    }
   }
 }
 .indexing {

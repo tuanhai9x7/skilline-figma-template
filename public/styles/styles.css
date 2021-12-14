@@ -202,12 +202,16 @@ img {
     .btn-play {
       width: 6rem;
       height: 6rem;
-      font-size: 1.8rem; } }
+      font-size: 1.8rem; }
+      .btn-play:hover {
+        font-size: 2rem; } }
   @media screen and (max-width: 1023px) {
     .btn-play {
       width: 4rem;
       height: 4rem;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+      .btn-play:hover {
+        font-size: 1.6rem; } }
 
 .indexing {
   font-size: 2rem;
@@ -1565,7 +1569,7 @@ section {
     .testimonial-img {
       width: 30%;
       margin: 0 auto 3rem;
-      height: auto; } }
+      height: 15rem; } }
   @media screen and (max-width: 374px) {
     .testimonial-btn {
       gap: 0 0.6rem;
@@ -1782,8 +1786,13 @@ section {
     .news-title--small {
       font-size: 2rem;
       margin-bottom: 1rem; }
+    .news-main-title {
+      font-size: 2.4rem;
+      margin-bottom: 1rem; }
+    .news-main-text {
+      font-size: 1.8rem; }
     .news-item-text {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
   @media screen and (max-width: 374px) {
     .news-img {
       margin-bottom: 2rem; }
