@@ -1,0 +1,139 @@
+.youcan {
+  padding-bottom: 18rem;
+  &-container {
+    @include boxed(1547px);
+    @include flexbox();
+    gap: 6.7rem;
+  }
+  &-content {
+    @include boxed(73rem);
+    position: relative;
+    .circle {
+      position: absolute;
+      background-color: $yellow-color;
+      border-radius: 50%;
+      z-index: -1;
+      &--big {
+        @include size(7.3rem);
+        top: 0;
+        left: 0;
+        transform: translate(-30%, -15%);
+      }
+      &--small {
+        @include size(3rem);
+        right: 0;
+        bottom: 50%;
+        transform: translateY(300%);
+      }
+    }
+  }
+  &-boxed {
+    margin-bottom: 3rem;
+  }
+  &-heading {
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    span {
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+  &-more {
+    text-decoration: underline;
+  }
+  &-img {
+    flex-shrink: 0;
+    position: relative;
+    img{
+
+      border-radius: 20px;
+    }
+    .square {
+      border-radius: 20px;
+      position: absolute;
+      z-index: -1;
+      &--blue {
+        @include size(13.8rem);
+        background-color: $blue-lighter-color;
+        top: 0;
+        left: 0;
+        transform: translate(-2rem, -2rem);
+      }
+      &--yellow {
+        @include size(23.1rem);
+        background-color: $yellow-light-color;
+        right: 0;
+        bottom: 0;
+        transform: translate(2rem, 2rem);
+      }
+    }
+  }
+  &-btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  display: block;
+  @include maxWidth(1919px){
+    &-container{
+      padding: 0 15px;
+    }
+    &-img{
+      max-width: 60rem;
+    }
+  }
+  @include maxWidth(1439px){
+    &-img{
+      max-width: 45rem;
+    }
+  }
+  @include maxWidth(1023px){
+    padding-bottom: 9rem;
+    &-container{
+      flex-direction: column;
+    }
+    &-img{
+      max-width: 100%;
+    }
+    &-btn-play{
+      @include size(8rem);
+      font-size: 2.6rem;
+    }
+  }
+  @include maxWidth(767px){
+    // padding-bottom: 5rem;
+    &-container{
+      gap: 4rem 0;
+    }
+    &-more{
+      font-size: 1.6rem;
+    }
+    &-btn-play{
+      @include size(4rem);
+      font-size: 1.2rem;
+    }
+    &-img{
+      img{
+        border-radius: 10px;
+      }
+      .square{
+        border-radius: 10px;
+        &--blue{
+          @include size(9rem);
+          transform: translate(-1rem, -1rem);
+        }
+        &--yellow{
+          @include size(15rem);
+          transform: translate(1rem, 1rem);
+        }
+      }
+    }
+  }
+  @include maxWidth(374px){
+    &-heading{
+      font-size: 2.2rem;
+    }
+  }
+}

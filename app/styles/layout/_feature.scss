@@ -1,0 +1,202 @@
+.feature {
+  padding-bottom: 16rem;
+  &-boxed {
+    margin-bottom: 17.6rem;
+  }
+  &-heading {
+    span {
+      font-weight: 700;
+    }
+  }
+  &-title {
+    font-size: 4rem;
+    line-height: 1.6;
+  }
+  // &-desc{
+  //   line-height: 1.6;
+  // }
+  &-user {
+    @include flexbox(flex-end);
+    gap: 12.6rem;
+    margin-bottom: 19.4rem;
+    &-content {
+      max-width: 56rem;
+    }
+    &-title {
+      margin-bottom: 5.1rem;
+    }
+    &-item {
+      @include flexbox(center, start);
+      gap: 4.2rem;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+    &-icon {
+      background: #fbfbfb;
+      box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+      border-radius: 50%;
+      @include size(6rem);
+      @include flexbox(center, center);
+      flex-shrink: 0;
+    }
+    &-text {
+      line-height: 1.8;
+    }
+    @include maxWidth(1279px) {
+      flex-direction: column;
+      gap: 3rem 0;
+      &-content {
+        max-width: 100%;
+      }
+    }
+    @include maxWidth(1023px) {
+      margin-bottom: 9rem;
+      &-item {
+        gap: 0 2rem;
+      }
+    }
+    @include maxWidth(767px) {
+      margin-bottom: 5rem;
+      &-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &-tools {
+    @include boxed(1441px);
+    @include flexbox();
+    gap: 23.6rem;
+    margin-bottom: 16rem;
+    &-content {
+      max-width: 56.8rem;
+    }
+    &-title {
+      max-width: 39.3rem;
+    }
+    @include maxWidth(1439px){
+      gap: 0 10rem;
+    }
+    @include maxWidth(1279px){
+      &-content{
+        max-width: 48rem;
+      }
+    }
+    @include maxWidth(1023px){
+      gap: 0 3rem;
+      margin-bottom: 9rem;
+      &-content{
+        max-width: 36rem;
+      }
+    }
+    @include maxWidth(767px){
+      margin-bottom: 5rem;
+      flex-direction: column-reverse;
+      gap: 3rem 0;
+    }
+  }
+  &-assessments {
+    @include flexbox();
+    gap: 24.8rem;
+    @include boxed(1461px);
+    margin-bottom: 16rem;
+    &-content {
+      max-width: 59.6rem;
+    }
+    &-title {
+      max-width: 34.7rem;
+    }
+    @include maxWidth(1279px){
+      gap: 0 10rem;
+    }
+    @include maxWidth(1023px){
+      gap: 0 4rem;
+      margin-bottom: 9rem;
+    }
+    @include maxWidth(767px){
+      flex-direction: column;
+      margin-bottom: 5rem;
+    }
+  }
+  &-management {
+    @include boxed(1545px);
+    @include flexbox();
+    gap: 9rem;
+    margin-bottom: 16rem;
+    &-content {
+      max-width: 64.5rem;
+    }
+    &-title {
+      max-width: 42rem;
+    }
+    @include maxWidth(1279px){
+      &-content{
+        max-width: 39rem;
+      }
+    }
+    @include maxWidth(1023px){
+      margin-bottom: 9rem;
+      gap: 0 4rem;
+    }
+    @include maxWidth(767px){
+      margin-bottom: 5rem;
+      flex-direction: column-reverse;
+      gap: 4rem 0;
+    }
+  }
+  &-discussions {
+    @include boxed(1486px);
+    @include flexbox();
+    gap: 19rem;
+    margin-bottom: 15rem;
+    &-content {
+      max-width: 54rem;
+    }
+    &-title {
+      max-width: 27.4rem;
+    }
+    @include maxWidth(1279px){
+      gap: 0 10rem;
+    }
+    @include maxWidth(1023px){
+      gap: 0 4rem;
+      margin-bottom: 9rem;
+    }
+    @include maxWidth(767px){
+      flex-direction: column;
+      margin-bottom: 5rem;
+    }
+  }
+  &-more {
+    text-align: center;
+  }
+  display: block;
+  @include maxWidth(1279px) {
+    &-title{
+      font-size: 3.6rem;
+    }
+  }
+  @include maxWidth(1023px) {
+    padding-bottom: 9rem;
+    &-boxed {
+      margin-bottom: 12rem;
+    }
+    &-title{
+      font-size: 3.2rem;
+    }
+    &-boxed {
+      margin-bottom: 5rem;
+    }
+  }
+  @include maxWidth(767px) {
+    &-title {
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @include maxWidth(374px) {
+    &-title {
+      font-size: 2.2rem;
+    }
+  }
+}

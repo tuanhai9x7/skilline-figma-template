@@ -1,0 +1,70 @@
+.integration {
+  padding-bottom: 17rem;
+  &-container {
+    @include boxed(1457px);
+    @include flexbox();
+    gap: 29rem;
+  }
+  &-imgs {
+    &-top {
+      @include flexbox(flex-end, start);
+      gap: 9.1rem;
+      margin-bottom: 8.3rem;
+    }
+    &-bottom {
+      @include flexbox(flex-start, end);
+      gap: 8.5rem;
+    }
+  }
+  &-content {
+    max-width: 68.8rem;
+  }
+  &-title {
+    margin-top: 3.3rem;
+    margin-bottom: 3rem;
+    font-family: $secondary-font;
+    max-width: 48rem;
+  }
+  &-desc {
+    font-family: $secondary-font;
+    margin-bottom: 4.4rem;
+  }
+  display: block;
+  @include maxWidth(1439px) {
+    &-container {
+      gap: 0 15rem;
+    }
+  }
+  @include maxWidth(1279px){
+    &-content{
+      max-width: 48rem;
+    }
+  }
+  @include maxWidth(1023px){
+    &-container{
+      gap: 0 4rem;
+    }
+    &-content{
+      max-width: 41rem;
+    }
+    &-title{
+      font-size: 3.2rem;
+    }
+  }
+  @include maxWidth(767px){
+    padding-bottom: 9rem;
+    &-container{
+      flex-direction: column-reverse;
+      gap: 4rem 0;
+    }
+   
+    &-title{
+      font-size: 2.4rem;
+    }
+    &-imgs{
+      &-top{
+        margin-bottom: 3.3rem;
+      }
+    }
+  } 
+}

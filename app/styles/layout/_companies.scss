@@ -1,0 +1,42 @@
+.companies {
+  padding-bottom: 16rem;
+  &-container {
+    max-width: 1337px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: 12rem;
+    // padding-right: 12rem;
+  }
+  &-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 3.3rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0 7.5rem;
+  }
+  &-item {
+    @include flexbox(center, center);
+  }
+  display: block;
+  @include maxWidth(1023px) {
+    padding-bottom: 9rem;
+    &-list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 3rem;
+    }
+  }
+  @include maxWidth(767px) {
+    &-title {
+      font-size: 2.2rem;
+    }
+    &-list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+    }
+  }
+}

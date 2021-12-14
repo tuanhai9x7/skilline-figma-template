@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body{
+  font-size: 2.2rem;
+  line-height: 1;
+  background-color: white;
+  color: $text-color;
+  font-weight: 400;
+  font-family: $primary-font;
+}
+h1, h2, h3, h4, h5, h6{
+  color: $title-color;
+  font-weight: 500;
+}
